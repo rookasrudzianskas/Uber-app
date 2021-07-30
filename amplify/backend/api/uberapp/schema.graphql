@@ -9,6 +9,6 @@ type Car @model {
   type: String!
   latitude: Float!
   longitude: Float!
-  heading: Int!
+  heading: Float!
 }
 
