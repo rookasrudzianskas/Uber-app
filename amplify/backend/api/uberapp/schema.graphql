@@ -16,7 +16,10 @@ type Car @model {
   orders: [Order] @connection(keyName: "byCar", fields: ["id", "createdAt"])
 }
 
-type Order @model @key(name: "byUser", fields: ["userId"]) @key(name: "byCar", fields: ["carId"])  {
+type Order @model
+  @key(name: "byUser", fields: ["userId"])
+  @key(name: "byCar", fields: ["carId"])  {
+
   id: ID!
 
   userId: String!
