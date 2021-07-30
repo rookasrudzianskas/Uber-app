@@ -12,11 +12,16 @@ type Car @model {
   latitude: Float,
   longitude: Float,
   heading: Float,
+
+  orders: [Order] @connection(keyName: "byCar", fields: ["id", "createdAt"])
 }
 
-type Order @model @key(name: "byUser", fields: ["userId"]) {
+type Order @model @key(name: "byUser", fields: ["userId"]) @key(name: "byCar", fields: ["carId"])  {
   id: ID!
 
   userId: String!
   user: User @connection(fields: ["userId"])
+
+  carId: String,
+  car: Car @connection(fields: ["carId"])
 }
