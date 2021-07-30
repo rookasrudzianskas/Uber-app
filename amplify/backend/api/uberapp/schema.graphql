@@ -7,8 +7,11 @@ type User @model {
 type Car @model {
   id: ID!
   type: String!
-  latitude: Float!
-  longitude: Float!
-  heading: Float!
+  latitude: Float,
+  longitude: Float,
+  heading: Float,
 }
 
+type Order @model {
+  id: ID!
+}
