@@ -10,6 +10,14 @@
       "StackName": "amplify-uberapp-dev-133214",
       "StackId": "arn:aws:cloudformation:us-east-1:986698840618:stack/amplify-uberapp-dev-133214/6a8f8ee0-f121-11eb-ba9a-0afdb21fa153",
       "AmplifyAppId": "d17tlqnq5mx8kc"
+    },
+    "categories": {
+      "function": {
+        "uberappa822ecdda822ecddPostConfirmation": {}
+      },
+      "auth": {
+        "uberappa822ecdda822ecdd": {}
+      }
     }
   }
 }
