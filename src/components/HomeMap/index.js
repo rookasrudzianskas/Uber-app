@@ -68,7 +68,7 @@ const HomeMap = (props) => {
                         // longitude: -122.4324,
                         latitude: 28.450627,
                         longitude: -16.263045,
-                        latitudeDelta: 0.0222,
+                        latitudeDelta: 0.0223,
                         longitudeDelta: 0.0121,
                     }}
                 >
