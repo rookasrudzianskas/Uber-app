@@ -26,9 +26,19 @@ type Order @model
   userId: ID!
   user: User @connection(fields: ["userId"])
 
+  type: String!
+  originLatitude: Float!
+  originLongitude: Float!
+
+  destLatitude: Float!
+  destLongitude: Float!
+
+
   carId: ID!
   car: Car @connection(fields: ["carId"])
 }
+
+
 
 
 # maybe works, but problem is that car ID is required, at first we do not have any orders or cars

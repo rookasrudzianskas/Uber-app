@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Dimensions, Text, View} from "react-native";
 import UberTypes from "../../components/UberTypes";
 import RouteMap from "../../components/RouteMap";
@@ -10,6 +10,7 @@ import {useRoute} from "@react-navigation/native";
 const SearchResults = (props) => {
 
     const route = useRoute();
+    const [type, setType] = useState(null);
     const {originPlace, destinationPlace} = route.params;
     // console.log("🚀",route.params);
 
