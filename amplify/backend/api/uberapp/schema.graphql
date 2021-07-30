@@ -13,18 +13,19 @@ type Car @model {
   longitude: Float,
   heading: Float,
 
-  orders: [Order] @connection(keyName: "byCar", fields: ["id", "createdAt"])
+  orders: [Order] @connection(keyName: "byCar", fields: ["id"])
 }
 
 type Order @model
   @key(name: "byUser", fields: ["userId"])
-  @key(name: "byCar", fields: ["carId"])  {
+  @key(name: "byCar", fields: ["carId", "createdAt"])  {
 
   id: ID!
+  createdAt: ID!
 
-  userId: String!
+  userId: ID!
   user: User @connection(fields: ["userId"])
 
-  carId: String,
+  carId: ID,
   car: Car @connection(fields: ["carId"])
 }
