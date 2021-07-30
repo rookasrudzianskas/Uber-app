@@ -37,3 +37,5 @@ exports.handler = async (event, context) => {
   context.done(null, event);
   // and done, lets hope it is all we need
 }
+
+// lets hope it works
