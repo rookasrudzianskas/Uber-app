@@ -11,6 +11,14 @@ const HomeMap = (props) => {
 
     const {type} = props;
 
+    useEffect(() => {
+
+    }, []);
+
+
+
+
+
 
     const getImageName = (type) => {
 
