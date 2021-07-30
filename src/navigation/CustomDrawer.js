@@ -2,6 +2,8 @@ import React from 'react';
 import {Image, Pressable, Text, View} from "react-native";
 import { DrawerContentScrollView, DrawerItemList } from '@react-navigation/drawer';
 import {Entypo, Foundation} from "@expo/vector-icons";
+import { Auth } from 'aws-amplify';
+
 
 
 const CustomDrawer = (props) => {
@@ -46,7 +48,7 @@ const CustomDrawer = (props) => {
                     <Text style={{color: 'white', fontSize: 18, paddingVertical: 5, marginBottom: 10}}>Make money driving</Text>
                 </Pressable>
 
-                <Pressable onPress={() => console.log("Make Money Driving")}>
+                <Pressable onPress={() => Auth.signOut({ global: true })}>
                     <Text style={{color: 'white', fontSize: 15, fontWeight: '700', paddingVertical: 5, marginTop: 20}}>Logout</Text>
                 </Pressable>
             </View>
