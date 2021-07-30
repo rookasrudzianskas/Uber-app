@@ -26,6 +26,6 @@ type Order @model
   userId: ID!
   user: User @connection(fields: ["userId"])
 
-  carId: ID,
+  carId: ID!
   car: Car @connection(fields: ["carId"])
 }
