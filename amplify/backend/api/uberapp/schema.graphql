@@ -4,4 +4,11 @@ type User @model {
   email: String!
 }
 
+type Car @model {
+  id: ID!
+  type: String!
+  latitude: Int!
+  longitude: Int!
+  heading: Int!
+}
 
