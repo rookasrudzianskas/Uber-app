@@ -1,11 +1,11 @@
 import React from 'react';
-import {Image, Text, View} from "react-native";
+import {Image, Pressable, Text, View} from "react-native";
 import styles from "./styles";
 import {Ionicons} from "@expo/vector-icons";
 
 const UberTypeRow = (props) => {
 
-    const {type} = props;
+    const {type, onPress, isSelected} = props;
 
     const getImageName = () => {
         if(type.type === 'UberX') {
@@ -19,7 +19,7 @@ const UberTypeRow = (props) => {
     }
 
     return (
-        <View style={styles.container}>
+        <Pressable onPress={onPress} style={[styles.container, {backgroundColor: isSelected ? "#efefef" : 'white'}]}>
 
             <Image style={styles.image} source={getImageName()} />
             <View style={styles.middleContainer}>
@@ -45,7 +45,7 @@ const UberTypeRow = (props) => {
                 </Text>
 
             </View>
-        </View>
+        </Pressable>
     );
 };
 

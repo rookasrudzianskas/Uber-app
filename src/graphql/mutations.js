@@ -15,6 +15,11 @@ export const createUser = /* GraphQL */ `
           id
           createdAt
           userId
+          type
+          originLatitude
+          originLongitude
+          destLatitude
+          destLongitude
           carId
           updatedAt
         }
@@ -39,6 +44,11 @@ export const updateUser = /* GraphQL */ `
           id
           createdAt
           userId
+          type
+          originLatitude
+          originLongitude
+          destLatitude
+          destLongitude
           carId
           updatedAt
         }
@@ -63,6 +73,11 @@ export const deleteUser = /* GraphQL */ `
           id
           createdAt
           userId
+          type
+          originLatitude
+          originLongitude
+          destLatitude
+          destLongitude
           carId
           updatedAt
         }
@@ -89,6 +104,11 @@ export const createCar = /* GraphQL */ `
           id
           createdAt
           userId
+          type
+          originLatitude
+          originLongitude
+          destLatitude
+          destLongitude
           carId
           updatedAt
         }
@@ -115,6 +135,11 @@ export const updateCar = /* GraphQL */ `
           id
           createdAt
           userId
+          type
+          originLatitude
+          originLongitude
+          destLatitude
+          destLongitude
           carId
           updatedAt
         }
@@ -141,6 +166,11 @@ export const deleteCar = /* GraphQL */ `
           id
           createdAt
           userId
+          type
+          originLatitude
+          originLongitude
+          destLatitude
+          destLongitude
           carId
           updatedAt
         }
@@ -170,6 +200,11 @@ export const createOrder = /* GraphQL */ `
         createdAt
         updatedAt
       }
+      type
+      originLatitude
+      originLongitude
+      destLatitude
+      destLongitude
       carId
       car {
         id
@@ -206,6 +241,11 @@ export const updateOrder = /* GraphQL */ `
         createdAt
         updatedAt
       }
+      type
+      originLatitude
+      originLongitude
+      destLatitude
+      destLongitude
       carId
       car {
         id
@@ -242,6 +282,11 @@ export const deleteOrder = /* GraphQL */ `
         createdAt
         updatedAt
       }
+      type
+      originLatitude
+      originLongitude
+      destLatitude
+      destLongitude
       carId
       car {
         id

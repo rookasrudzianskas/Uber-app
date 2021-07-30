@@ -8,9 +8,9 @@ import {useRoute} from "@react-navigation/native";
 
 
 const SearchResults = (props) => {
+    const typeState = useState(null);
 
     const route = useRoute();
-    const [type, setType] = useState(null);
     const {originPlace, destinationPlace} = route.params;
     // console.log("🚀",route.params);
 
@@ -23,7 +23,7 @@ const SearchResults = (props) => {
             </View>
 
             <View style={{height: 550}}>
-                <UberTypes />
+                <UberTypes typeState={typeState} />
             </View>
         </View>
     );
