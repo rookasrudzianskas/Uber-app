@@ -13,7 +13,10 @@
     },
     "categories": {
       "function": {
-        "uberappa822ecdda822ecddPostConfirmation": {}
+        "uberappa822ecdda822ecddPostConfirmation": {
+          "deploymentBucketName": "amplify-uberapp-dev-133214-deployment",
+          "s3Key": "amplify-builds/uberappa822ecdda822ecddPostConfirmation-6b6d5357475634415250-build.zip"
+        }
       },
       "auth": {
         "uberappa822ecdda822ecdd": {}
