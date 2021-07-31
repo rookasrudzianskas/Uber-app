@@ -20,6 +20,8 @@ const SearchResults = (props) => {
             return;
         }
 
+        /// submit to the server
+
 
     }
     // console.log("🚀",route.params);
