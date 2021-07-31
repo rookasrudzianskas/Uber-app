@@ -19,7 +19,7 @@ const UberTypeRow = (props) => {
     }
 
     return (
-        <Pressable onPress={onPress} style={[styles.container, {backgroundColor: isSelected ? "white" : '#efefef'}]}>
+        <Pressable onPress={onPress} style={[styles.container, {backgroundColor: isSelected ? '#efefef' :  "white" }]}>
 
             <Image style={styles.image} source={getImageName()} />
             <View style={styles.middleContainer}>
