@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Dimensions, Text, View} from "react-native";
+import {Dimensions, Text, View, Alert} from "react-native";
 import UberTypes from "../../components/UberTypes";
 import RouteMap from "../../components/RouteMap";
 import {useRoute} from "@react-navigation/native";
@@ -46,8 +46,9 @@ const SearchResults = (props) => {
                 input: input,
             }));
 
-            console.log("🚀", response);
+            // console.log("🚀", response);
 
+            Alert.alert("Hurrayyy", "Your order has been confirmed successfully!")
 
         } catch (e) {
             console.log(e);
