@@ -5,15 +5,15 @@ import typesData from "../../../assets/data/types";
 import {Ionicons, MaterialIcons} from "@expo/vector-icons";
 import styles from "./styles";
 
-const UberTypes = ({typeState}) => {
+const UberTypes = ({typeState, onSubmit}) => {
 
     const [selectedType, setSelectedType] = typeState;
 
-    const confirm = () => {
-        console.log("Clicked")
-
-        // next some magical stuff goes in here
-    }
+    // const confirm = () => {
+    //     console.log("Clicked")
+    //
+    //     // next some magical stuff goes in here
+    // }
 
     return (
         <View>
@@ -40,7 +40,7 @@ const UberTypes = ({typeState}) => {
                 </View>
             </View>
 
-            <Pressable onPress={confirm} style={styles.button}>
+            <Pressable onPress={onSubmit} style={styles.button}>
                 <Text style={styles.confirm}>
                     Confirm Uber
                 </Text>
