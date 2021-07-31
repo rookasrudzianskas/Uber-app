@@ -22,7 +22,9 @@ const SearchResults = (props) => {
                 <RouteMap origin={originPlace} destination={destinationPlace} />
             </View>
 
-            <View style={{height: 550, backgroundColor: 'white',}}>
+            <View style={{height: 550,
+                // backgroundColor: 'white',
+            }}>
                 <UberTypes typeState={typeState} />
             </View>
         </View>
