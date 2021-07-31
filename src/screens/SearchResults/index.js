@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {Dimensions, Text, View, Alert} from "react-native";
 import UberTypes from "../../components/UberTypes";
 import RouteMap from "../../components/RouteMap";
-import {useRoute} from "@react-navigation/native";
+import {useNavigation, useRoute} from "@react-navigation/native";
 import {API, Auth, graphqlOperation} from "aws-amplify";
 import {createOrder} from "../../graphql/mutations";
 
@@ -14,6 +14,7 @@ const SearchResults = (props) => {
 
     const route = useRoute();
     const {originPlace, destinationPlace} = route.params;
+    const navigation = useNavigation();
 
     const onSubmit = async () => {
         const [type] = typeState; /// takes the element 0
@@ -48,7 +49,10 @@ const SearchResults = (props) => {
 
             // console.log("🚀", response);
 
-            Alert.alert("Hurrayyy", "Your order has been confirmed successfully!")
+            Alert.alert("Hurrayyy", "Your order has been confirmed successfully!", [{
+                text: "Go home",
+                onPress: () => navigation.navigate("Home"),
+            }])
 
         } catch (e) {
             console.log(e);
