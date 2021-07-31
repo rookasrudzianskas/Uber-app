@@ -3,6 +3,8 @@ import {Dimensions, Text, View} from "react-native";
 import UberTypes from "../../components/UberTypes";
 import RouteMap from "../../components/RouteMap";
 import {useRoute} from "@react-navigation/native";
+import {API, Auth, graphqlOperation} from "aws-amplify";
+import {createOrder} from "../../graphql/mutations";
 
 
 
@@ -24,6 +26,20 @@ const SearchResults = (props) => {
 
         try {
 
+            const userInfo = await Auth.currentAuthenticatedUser();
+
+            const input = {
+                type: type,
+                originLatitude: originPlace.details.geometry.location.lat,
+                originLongitude: originPlace.details.geometry.location.lng,
+                destLatitude: destinationPlace.details.geometry.location.lat,
+                destLongitude: destinationPlace.details.geometry.location.lng,
+
+                userId: userInfo.userAttributes.sub,
+                carId: ,
+            }
+
+            const response = await API.graphql(graphqlOperation(createOrder, {input}))
 
 
         } catch (e) {
