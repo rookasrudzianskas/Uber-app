@@ -28,7 +28,10 @@ const SearchResults = (props) => {
 
             const userInfo = await Auth.currentAuthenticatedUser();
 
+            const date = new Date();
+
             const input = {
+                createdAt: date.toISOString(),
                 type: type,
                 originLatitude: originPlace.details.geometry.location.lat,
                 originLongitude: originPlace.details.geometry.location.lng,
