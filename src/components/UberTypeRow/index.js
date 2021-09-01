@@ -50,3 +50,5 @@ const UberTypeRow = (props) => {
 };
 
 export default UberTypeRow ;
+
+// new things
