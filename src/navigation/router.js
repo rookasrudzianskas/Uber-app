@@ -5,6 +5,7 @@ import HomeNavigator from "./Home";
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import {Text, View} from "react-native";
 import CustomDrawer from "./CustomDrawer";
+import LoginScreen from "../screens/LoginScreen";
 
 
 const RouteNavigator = (props) => {
@@ -27,6 +28,7 @@ const RouteNavigator = (props) => {
         }>
 
             <Drawer.Screen name="Home" component={HomeNavigator} />
+            <Drawer.Screen name="Login" component={LoginScreen} />
 
             <Drawer.Screen name="Your Trips">
                 {() =>  <Something name="Your Trips" />}
