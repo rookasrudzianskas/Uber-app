@@ -18,7 +18,10 @@
         }
       },
       "function": {
-        "uberuserappall51c36bdcPostConfirmation": {}
+        "uberuserappall51c36bdcPostConfirmation": {
+          "deploymentBucketName": "amplify-uberuserappall-dev-134932-deployment",
+          "s3Key": "amplify-builds/uberuserappall51c36bdcPostConfirmation-786368344e425547555a-build.zip"
+        }
       }
     }
   }
