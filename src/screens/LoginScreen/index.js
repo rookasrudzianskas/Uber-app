@@ -1,7 +1,8 @@
 import React from 'react';
 import tw from 'tailwind-react-native-classnames';
-import { Image, Text, StyleSheet, View } from 'react-native';
+import {Image, Text, StyleSheet, View, TouchableOpacity} from 'react-native';
 import { BlurView } from 'expo-blur';
+import {AntDesign, FontAwesome5} from '@expo/vector-icons';
 
 const LoginScreen = () => {
 
@@ -12,7 +13,23 @@ const LoginScreen = () => {
             <View style={styles.container}>
                 <Image style={[StyleSheet.absoluteFill, styles.image]} source={{ uri }} />
                 <BlurView intensity={90} tint="dark" style={styles.blurContainer}>
+                    <View style={tw`flex `}>
+                    <View style={tw`flex mb-36 flex-row items-center justify-center`}>
+                        <FontAwesome5 name="uber" size={40} color="white" />
+                        <Text style={tw`text-xl text-white ml-4`}>
+                            Login to Uber
+                        </Text>
 
+                    </View>
+
+
+                    <TouchableOpacity activeOpacity={0.8}>
+                        <View style={tw`flex flex-row items-center justify-center  bg-gray-800 py-3 px-3 rounded-full`}>
+                            <AntDesign name="google" size={25} color="white" />
+                            <Text style={tw`text-xl text-white ml-4 font-bold ml-2`}>Sign in with Google</Text>
+                        </View>
+                    </TouchableOpacity>
+                    </View>
                 </BlurView>
             </View>
         );
@@ -29,7 +46,7 @@ const LoginScreen = () => {
         },
         blurContainer: {
             flex: 1,
-            padding: 20,
+            padding: 40,
             justifyContent: 'center',
         },
         text: {
