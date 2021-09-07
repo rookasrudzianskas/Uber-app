@@ -92,10 +92,10 @@ Parameters:
   userpoolClientGenerateSecret:
     Type: String
             
+    
   userpoolClientRefreshTokenValidity:
-    Type: String
-  
-            
+    Type: Number
+          
         
   userpoolClientWriteAttributes:
     Type: CommaDelimitedList
@@ -147,18 +147,6 @@ Parameters:
     Type: CommaDelimitedList
       
   
-  thirdPartyAuth:
-    Type: String
-            
-        
-  authProviders:
-    Type: CommaDelimitedList
-      
-  googleClientId:
-    Type: String
-  
-            
-  
   userPoolGroups:
     Type: String
             
@@ -186,15 +174,6 @@ Parameters:
     Type: String
   
             
-  hostedUIProviderCreds:
-    Type: String
-  
-            
-  oAuthMetadata:
-    Type: String
-  
-            
-            
       
   parentStack:
     Type: String
@@ -211,6 +190,27 @@ Parameters:
   permissions:
     Type: CommaDelimitedList
       
+        
+  authProviders:
+    Type: CommaDelimitedList
+      
+  
+  thirdPartyAuth:
+    Type: String
+            
+  hostedUIProviderCreds:
+    Type: String
+  
+            
+  googleClientId:
+    Type: String
+  
+            
+  oAuthMetadata:
+    Type: String
+  
+            
+            
 Conditions:
   ShouldNotCreateEnvResources: !Equals [ !Ref env, NONE ]
   
@@ -817,14 +817,6 @@ Resources:
             - cognito-idp.${region}.amazonaws.com/${client}
             - { region: !Ref "AWS::Region",  client: !Ref UserPool}
             
-      SupportedLoginProviders:
-        
-        
-        accounts.google.com: !Ref googleClientId
-        
-        
-        
-      
       AllowUnauthenticatedIdentities: !Ref allowUnauthenticatedIdentities
       
     
