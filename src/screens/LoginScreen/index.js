@@ -14,9 +14,9 @@ const LoginScreen = () => {
                         <BlurView intensity={60} tint="dark" style={styles.blurContainer}>
 
                     <View style={tw`flex flex-row items-center justify-center flex-1 -mt-32`}>
-                        <FontAwesome5 name="uber" size={40} color="white" />
-                        <Text style={tw`text-4xl text-white ml-4`}>
-                            Uber
+                        <FontAwesome5 name="uber" size={65} color="white" />
+                        <Text style={[styles.textsize, tw`text-white ml-4`]}>
+                            UBER
                         </Text>
                     </View>
 
@@ -60,4 +60,7 @@ const styles = StyleSheet.create({
         fontSize: 24,
         fontWeight: '600'
     },
+    textsize: {
+        fontSize: 70,
+    }
 });
