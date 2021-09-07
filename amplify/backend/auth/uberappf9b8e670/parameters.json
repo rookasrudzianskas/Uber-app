@@ -66,8 +66,10 @@
     "triggers": "{\n  \"PostConfirmation\": [\n    \"custom\"\n  ]\n}",
     "hostedUI": true,
     "hostedUIDomainName": "uberapp",
-    "authProvidersUserPool": [],
-    "hostedUIProviderMeta": "[]",
+    "authProvidersUserPool": [
+        "Google"
+    ],
+    "hostedUIProviderMeta": "[{\"ProviderName\":\"Google\",\"authorize_scopes\":\"openid email profile\",\"AttributeMapping\":{\"email\":\"email\",\"username\":\"sub\"}}]",
     "parentStack": {
         "Ref": "AWS::StackId"
     },
