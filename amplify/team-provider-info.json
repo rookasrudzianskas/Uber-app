@@ -18,7 +18,10 @@
         }
       },
       "function": {
-        "uberappf9b8e670PostConfirmation": {}
+        "uberappf9b8e670PostConfirmation": {
+          "deploymentBucketName": "amplify-uberapp-dev-145419-deployment",
+          "s3Key": "amplify-builds/uberappf9b8e670PostConfirmation-687861667255616f4d49-build.zip"
+        }
       }
     }
   }
