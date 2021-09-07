@@ -20,7 +20,7 @@
       "function": {
         "uberappf9b8e670PostConfirmation": {
           "deploymentBucketName": "amplify-uberapp-dev-145419-deployment",
-          "s3Key": "amplify-builds/uberappf9b8e670PostConfirmation-43586672373358434551-build.zip"
+          "s3Key": "amplify-builds/uberappf9b8e670PostConfirmation-79614850733450697453-build.zip"
         }
       }
     }
