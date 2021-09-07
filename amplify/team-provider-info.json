@@ -13,7 +13,10 @@
     },
     "categories": {
       "function": {
-        "uberuserappfrontendc0a5a8d3c0a5a8d3PostConfirmation": {}
+        "uberuserappfrontendc0a5a8d3c0a5a8d3PostConfirmation": {
+          "deploymentBucketName": "amplify-uberuserappfrontend-dev-131315-deployment",
+          "s3Key": "amplify-builds/uberuserappfrontendc0a5a8d3c0a5a8d3PostConfirmation-422b34574f595a546e31-build.zip"
+        }
       },
       "auth": {
         "uberuserappfrontendc0a5a8d3c0a5a8d3": {
