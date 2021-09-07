@@ -13,7 +13,12 @@
     },
     "categories": {
       "auth": {
-        "uberappf9b8e670": {}
+        "uberappf9b8e670": {
+          "googleClientId": "472795468483-8t6egisqh6up64meg6lvde33sgo0cb99.apps.googleusercontent.com"
+        }
+      },
+      "function": {
+        "uberappf9b8e670PostConfirmation": {}
       }
     }
   }

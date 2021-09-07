@@ -3,7 +3,17 @@
     "uberappf9b8e670": {
       "service": "Cognito",
       "providerPlugin": "awscloudformation",
-      "dependsOn": [],
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "uberappf9b8e670PostConfirmation",
+          "triggerProvider": "Cognito",
+          "attributes": [
+            "Arn",
+            "Name"
+          ]
+        }
+      ],
       "customAuth": false
     }
   },
@@ -22,6 +32,13 @@
           "additionalAuthenticationProviders": []
         }
       }
+    }
+  },
+  "function": {
+    "uberappf9b8e670PostConfirmation": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
     }
   }
 }
