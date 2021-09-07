@@ -44,9 +44,9 @@ const LoginScreen = () => {
                     </View>
 
                         <View style={tw`flex items-center justify-center`}>
-                    <View style={tw`absolute bottom-0 left-5 mb-24`}>
+                    <View style={tw`absolute bottom-0 left-15 mb-24`}>
                             <TouchableOpacity activeOpacity={0.8} >
-                                <View style={tw`px-16 py-5 bg-gray-800 flex flex-row items-center border-4 border-gray-500 rounded-full  mt-2`}>
+                                <View style={tw`px-11 py-3 bg-black flex flex-row items-center border-2 border-gray-300 rounded-full  mt-2`}>
                                     <FontAwesome5 name="uber" size={25} color="white" />
                                     <Text style={tw`text-gray-100 text-center ml-4 text-lg font-bold`}>Sign in with Google!</Text>
                                 </View>
