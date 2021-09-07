@@ -15,8 +15,8 @@ const LoginScreen = () => {
 
                     <View style={tw`flex flex-row items-center justify-center flex-1 -mt-32`}>
                         <FontAwesome5 name="uber" size={40} color="white" />
-                        <Text style={tw`text-xl text-white ml-4`}>
-                            Login to Uber
+                        <Text style={tw`text-4xl text-white ml-4`}>
+                            Uber
                         </Text>
                     </View>
 
