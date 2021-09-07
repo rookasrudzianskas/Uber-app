@@ -25,7 +25,7 @@ const LoginScreen = () => {
                             <TouchableOpacity activeOpacity={0.8} >
                                 <View style={tw`px-11 py-3 bg-black flex flex-row items-center border-2 border-gray-300 rounded-full  mt-2`}>
                                     <FontAwesome5 name="uber" size={25} color="white" />
-                                    <Text style={tw`text-gray-100 text-center ml-4 text-lg font-bold`}>Sign in with Google!</Text>
+                                    <Text style={tw`text-gray-100 text-center ml-4 text-lg font-bold`}>Sign in to Uber</Text>
                                 </View>
                             </TouchableOpacity>
 
