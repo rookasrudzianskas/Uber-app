@@ -1,0 +1,25 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-uberuserappfrontend-dev-131315-authRole",
+      "UnauthRoleArn": "arn:aws:iam::986698840618:role/amplify-uberuserappfrontend-dev-131315-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::986698840618:role/amplify-uberuserappfrontend-dev-131315-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-uberuserappfrontend-dev-131315-deployment",
+      "UnauthRoleName": "amplify-uberuserappfrontend-dev-131315-unauthRole",
+      "StackName": "amplify-uberuserappfrontend-dev-131315",
+      "StackId": "arn:aws:cloudformation:us-east-1:986698840618:stack/amplify-uberuserappfrontend-dev-131315/392649e0-0fc4-11ec-95a0-12a9cf5d803b",
+      "AmplifyAppId": "d2cnn70qv9rnq2"
+    },
+    "categories": {
+      "function": {
+        "uberuserappfrontendc0a5a8d3c0a5a8d3PostConfirmation": {}
+      },
+      "auth": {
+        "uberuserappfrontendc0a5a8d3c0a5a8d3": {
+          "googleClientId": "472795468483-8t6egisqh6up64meg6lvde33sgo0cb99.apps.googleusercontent.com"
+        }
+      }
+    }
+  }
+}
