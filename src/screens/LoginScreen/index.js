@@ -3,8 +3,13 @@ import tw from 'tailwind-react-native-classnames';
 import {Image, Text, StyleSheet, View, TouchableOpacity} from 'react-native';
 import { BlurView } from 'expo-blur';
 import {AntDesign, FontAwesome5} from '@expo/vector-icons';
+import {Auth} from "aws-amplify";
 
 const LoginScreen = () => {
+
+    const signInWithGoogle = () => {
+        Auth.federatedSignIn('google');
+    }
 
     const uri = 'https://images.unsplash.com/photo-1512850183-6d7990f42385?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80';
 
@@ -22,7 +27,7 @@ const LoginScreen = () => {
 
                         <View style={tw`flex items-center justify-center`}>
                     <View style={tw`absolute bottom-0 mb-24`}>
-                            <TouchableOpacity activeOpacity={0.8} >
+                            <TouchableOpacity onPress={signInWithGoogle} activeOpacity={0.8} >
                                 <View style={tw`px-11 py-3 bg-black flex flex-row items-center border-2 border-gray-300 rounded-full  mt-2`}>
                                     <FontAwesome5 name="uber" size={25} color="white" />
                                     <Text style={tw`text-gray-100 text-center ml-4 text-lg font-bold`}>Sign in to Uber</Text>
