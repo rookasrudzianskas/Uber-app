@@ -1,19 +1,12 @@
 {
-  "function": {
-    "uberuserappfrontendc0a5a8d3c0a5a8d3PostConfirmation": {
-      "build": true,
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda"
-    }
-  },
   "auth": {
-    "uberuserappfrontendc0a5a8d3c0a5a8d3": {
+    "uberuserappall51c36bdc": {
       "service": "Cognito",
       "providerPlugin": "awscloudformation",
       "dependsOn": [
         {
           "category": "function",
-          "resourceName": "uberuserappfrontendc0a5a8d3c0a5a8d3PostConfirmation",
+          "resourceName": "uberuserappall51c36bdcPostConfirmation",
           "triggerProvider": "Cognito",
           "attributes": [
             "Arn",
@@ -24,8 +17,7 @@
       "customAuth": false,
       "frontendAuthConfig": {
         "loginMechanisms": [
-          "PREFERRED_USERNAME",
-          "GOOGLE"
+          "PREFERRED_USERNAME"
         ],
         "signupAttributes": [
           "EMAIL"
@@ -42,7 +34,7 @@
     }
   },
   "api": {
-    "uberuserappfrontend": {
+    "uberuserappall": {
       "service": "AppSync",
       "providerPlugin": "awscloudformation",
       "output": {
@@ -50,12 +42,19 @@
           "defaultAuthentication": {
             "authenticationType": "AMAZON_COGNITO_USER_POOLS",
             "userPoolConfig": {
-              "userPoolId": "authuberuserappfrontendc0a5a8d3c0a5a8d3"
+              "userPoolId": "authuberuserappall51c36bdc"
             }
           },
           "additionalAuthenticationProviders": []
         }
       }
+    }
+  },
+  "function": {
+    "uberuserappall51c36bdcPostConfirmation": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
     }
   }
 }

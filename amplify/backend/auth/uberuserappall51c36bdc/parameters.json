@@ -1,8 +1,8 @@
 {
-    "identityPoolName": "uberuserappfrontendc0a5a8d3_identitypool_c0a5a8d3",
+    "identityPoolName": "uberuserappall51c36bdc_identitypool_51c36bdc",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "uberusc0a5a8d3",
-    "userPoolName": "uberuserappfrontendc0a5a8d3_userpool_c0a5a8d3",
+    "resourceNameTruncated": "uberus51c36bdc",
+    "userPoolName": "uberuserappall51c36bdc_userpool_51c36bdc",
     "autoVerifiedAttributes": [
         "email"
     ],
@@ -31,10 +31,10 @@
     "userpoolClientReadAttributes": [
         "email"
     ],
-    "userpoolClientLambdaRole": "uberusc0a5a8d3_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "uberus51c36bdc_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "c0a5a8d3",
-    "resourceName": "uberuserappfrontendc0a5a8d3c0a5a8d3",
+    "sharedId": "51c36bdc",
+    "resourceName": "uberuserappall51c36bdc",
     "authSelections": "identityPoolAndUserPool",
     "authRoleArn": {
         "Fn::GetAtt": [
@@ -49,38 +49,38 @@
         ]
     },
     "useDefault": "manual",
-    "thirdPartyAuth": true,
-    "authProviders": [
-        "accounts.google.com"
-    ],
-    "userPoolGroups": false,
-    "adminQueries": false,
-    "triggers": "{\n  \"PostConfirmation\": [\n    \"custom\"\n  ]\n}",
     "hostedUI": true,
-    "hostedUIDomainName": "uberuserappfrontendc0a5a8d3-c0a5a8d3",
+    "triggers": "{\n  \"PostConfirmation\": [\n    \"custom\"\n  ]\n}",
+    "hostedUIDomainName": "uberuserappall51c36bdc-51c36bdc",
     "authProvidersUserPool": [
         "Google"
     ],
     "hostedUIProviderMeta": "[{\"ProviderName\":\"Google\",\"authorize_scopes\":\"openid email profile\",\"AttributeMapping\":{\"email\":\"email\",\"username\":\"sub\"}}]",
-    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"implicit\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"exp://127.0.0.1:19000/\"],\"LogoutURLs\":[\"exp://127.0.0.1:19000/\"]}",
     "userPoolGroupList": [],
     "serviceName": "Cognito",
     "usernameCaseSensitive": false,
     "parentStack": {
         "Ref": "AWS::StackId"
     },
-    "authTriggerConnections": "[\n  {\n    \"triggerType\": \"PostConfirmation\",\n    \"lambdaFunctionName\": \"uberuserappfrontendc0a5a8d3c0a5a8d3PostConfirmation\"\n  }\n]",
     "breakCircularDependency": true,
     "permissions": [],
     "dependsOn": [
         {
             "category": "function",
-            "resourceName": "uberuserappfrontendc0a5a8d3c0a5a8d3PostConfirmation",
+            "resourceName": "uberuserappall51c36bdcPostConfirmation",
             "triggerProvider": "Cognito",
             "attributes": [
                 "Arn",
                 "Name"
             ]
         }
-    ]
+    ],
+    "thirdPartyAuth": true,
+    "authProviders": [
+        "accounts.google.com"
+    ],
+    "userPoolGroups": false,
+    "adminQueries": false,
+    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"implicit\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"exp://127.0.0.1:19000/\"],\"LogoutURLs\":[\"exp://127.0.0.1:19000/\"]}",
+    "authTriggerConnections": "[\n  {\n    \"triggerType\": \"PostConfirmation\",\n    \"lambdaFunctionName\": \"uberuserappall51c36bdcPostConfirmation\"\n  }\n]"
 }

@@ -38,7 +38,3 @@ type Order @model
   car: Car @connection(fields: ["carId"])
 }
 
-
-
-
-# maybe works, but problem is that car ID is required, at first we do not have any orders or cars

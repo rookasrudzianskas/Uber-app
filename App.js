@@ -5,7 +5,7 @@ import * as Location from "expo-location";
 import RouteNavigator from "./src/navigation/router";
 import {NavigationContainer} from "@react-navigation/native";
 import Amplify from 'aws-amplify';
-import config from './aws-exports';
+import config from './src/aws-exports';
 
 
 import { withAuthenticator } from 'aws-amplify-react-native';

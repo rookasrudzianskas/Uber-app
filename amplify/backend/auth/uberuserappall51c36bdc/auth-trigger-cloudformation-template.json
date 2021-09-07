@@ -11,10 +11,10 @@
     "userpoolArn": {
       "Type": "String"
     },
-    "functionuberuserappfrontendc0a5a8d3c0a5a8d3PostConfirmationName": {
+    "functionuberuserappall51c36bdcPostConfirmationName": {
       "Type": "String"
     },
-    "functionuberuserappfrontendc0a5a8d3c0a5a8d3PostConfirmationArn": {
+    "functionuberuserappall51c36bdcPostConfirmationArn": {
       "Type": "String"
     }
   },
@@ -34,7 +34,7 @@
       "Properties": {
         "Action": "lambda:InvokeFunction",
         "FunctionName": {
-          "Ref": "functionuberuserappfrontendc0a5a8d3c0a5a8d3PostConfirmationName"
+          "Ref": "functionuberuserappall51c36bdcPostConfirmationName"
         },
         "Principal": "cognito-idp.amazonaws.com",
         "SourceArn": {
@@ -132,9 +132,9 @@
         "lambdaConfig": [
           {
             "triggerType": "PostConfirmation",
-            "lambdaFunctionName": "uberuserappfrontendc0a5a8d3c0a5a8d3PostConfirmation",
+            "lambdaFunctionName": "uberuserappall51c36bdcPostConfirmation",
             "lambdaFunctionArn": {
-              "Ref": "functionuberuserappfrontendc0a5a8d3c0a5a8d3PostConfirmationArn"
+              "Ref": "functionuberuserappall51c36bdcPostConfirmationArn"
             }
           }
         ]

@@ -1,27 +1,24 @@
 {
   "dev": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-uberuserappfrontend-dev-131315-authRole",
-      "UnauthRoleArn": "arn:aws:iam::986698840618:role/amplify-uberuserappfrontend-dev-131315-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::986698840618:role/amplify-uberuserappfrontend-dev-131315-authRole",
+      "AuthRoleName": "amplify-uberuserappall-dev-134932-authRole",
+      "UnauthRoleArn": "arn:aws:iam::986698840618:role/amplify-uberuserappall-dev-134932-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::986698840618:role/amplify-uberuserappall-dev-134932-authRole",
       "Region": "us-east-1",
-      "DeploymentBucketName": "amplify-uberuserappfrontend-dev-131315-deployment",
-      "UnauthRoleName": "amplify-uberuserappfrontend-dev-131315-unauthRole",
-      "StackName": "amplify-uberuserappfrontend-dev-131315",
-      "StackId": "arn:aws:cloudformation:us-east-1:986698840618:stack/amplify-uberuserappfrontend-dev-131315/392649e0-0fc4-11ec-95a0-12a9cf5d803b",
-      "AmplifyAppId": "d2cnn70qv9rnq2"
+      "DeploymentBucketName": "amplify-uberuserappall-dev-134932-deployment",
+      "UnauthRoleName": "amplify-uberuserappall-dev-134932-unauthRole",
+      "StackName": "amplify-uberuserappall-dev-134932",
+      "StackId": "arn:aws:cloudformation:us-east-1:986698840618:stack/amplify-uberuserappall-dev-134932/4a54b030-0fc9-11ec-837c-128e8185daf5",
+      "AmplifyAppId": "d3sq693pf5mq7y"
     },
     "categories": {
-      "function": {
-        "uberuserappfrontendc0a5a8d3c0a5a8d3PostConfirmation": {
-          "deploymentBucketName": "amplify-uberuserappfrontend-dev-131315-deployment",
-          "s3Key": "amplify-builds/uberuserappfrontendc0a5a8d3c0a5a8d3PostConfirmation-422b34574f595a546e31-build.zip"
-        }
-      },
       "auth": {
-        "uberuserappfrontendc0a5a8d3c0a5a8d3": {
+        "uberuserappall51c36bdc": {
           "googleClientId": "472795468483-8t6egisqh6up64meg6lvde33sgo0cb99.apps.googleusercontent.com"
         }
+      },
+      "function": {
+        "uberuserappall51c36bdcPostConfirmation": {}
       }
     }
   }
